@@ -10,12 +10,12 @@ var argv = require('yargs').argv
 
 gulp.task('sass', function() {
 	return gulp.src('./scss/styles.scss')
-		.pipe(gp.plumber({errorHandler: gp.notify.onError('Error: <%= error.message %>')}))
-		.pipe(gp.sass({
-			errLogToConsole: true
-		}))
-		.pipe(gp.autoprefixer())
-		.pipe(gulp.dest(`./css`))
+	.pipe(gp.plumber({errorHandler: gp.notify.onError('Error: <%= error.message %>')}))
+	.pipe(gp.sass({
+		errLogToConsole: true
+	}))
+	.pipe(gp.autoprefixer())
+	.pipe(gulp.dest(`./css`))
 })
 
 // var bundleErrHandler = function(err) {
