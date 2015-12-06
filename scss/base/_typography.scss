@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin-top: 0;
+	}
+}
+
+p {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #7f8c8d;
+	transform: color .4s;
+
+	&:hover {
+		color: lighten(#7f8c8d, 10%);
+	}
+}
+
+.td-u {
+	text-decoration: underline;
+}

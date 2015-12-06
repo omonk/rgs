@@ -1,0 +1,72 @@
+// Measures
+$container-width: 960px;
+$base-unit: 30px;
+$base-unit-half: $base-unit / 2;
+
+// Typography 
+$ff-primary: 'Asap', Helvetica, Arial;
+
+
+/// Fetch nested keys
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Keys to fetch
+/// @return {*}
+// @function map-deep-get($map, $keys...) {
+//   @each $key in $keys {
+//     $map: map-get($map, $key);
+//   }
+
+//   @return $map;
+// }
+
+// @function map-fetch($map, $keys) {
+//   $key: nth($keys, 1);
+//   $length: length($keys);
+//   $value: map-get($map, $key);
+//   @if ($length > 1) {
+//     $rest: ();
+//     @for $i from 2 through $length {
+//       $rest: append($rest, nth($keys, $i))
+//     }
+//     @return map-fetch($value, $rest)
+//   } @else {
+//     @return $value;
+//   }
+// }
+
+// $units: (
+// 	'classes': (
+// 		margin: m,
+// 		padding: p
+// 	),
+// 	'dirs':  (
+// 		'top': 't',
+// 		'right': 'r',
+// 		'bottom': 'b',
+// 		'left': 'l'
+// 	),
+// 	'props': (
+// 		margin: 1,
+// 		padding: 1
+// 	)
+// );
+
+
+
+// @for $i from 1 through length(map_get($units, dirs)) {
+
+// 	.m-#{map-fetch($units, dirs} {
+// 		margin: $base-unit;
+// 	}
+// }
+
+// @each $key in map-keys(map-get($units, dirs)) {
+// 	@each $value in map-keys(map-get($units, dirs)) {
+
+// 		.m-#{$key} {
+// 			margin-#{$value}: $base-unit;
+// 		}
+// 		// @debug $key;
+// 		// @debug $value
+// 	}
+// }
